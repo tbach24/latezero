@@ -253,17 +253,7 @@
     <h2>Reserve Early Access</h2>
     <p class="hint">Enter your email to see early-adopter pricing and confirm intent.</p>
     <!-- Netlify Forms: captured server-side, no external account needed -->
-    <form
-      name="latezero-step1"
-      method="POST"
-      netlify
-      netlify-honeypot="bot-field"
-      data-netlify="true"
-      id="form-step1"
-      action="/thank-you"
-    >
-      <input type="hidden" name="form-name" value="latezero-step1" />
-      <p style="display:none"><input name="bot-field" /></p>
+    <form id="form-step1">
       <div class="row">
         <input type="email" name="email" id="email-input" placeholder="your@email.com" required />
         <button type="submit" class="btn" id="btn-step1">Continue →</button>
@@ -396,14 +386,7 @@
 
 <!-- Netlify Forms: hidden form for Step 2 intent capture -->
 <!-- This fires client-side via fetch after Step 1 -->
-<form name="latezero-intent" netlify data-netlify="true" netlify-honeypot="bot-field2" style="display:none" id="form-intent">
-  <input type="hidden" name="form-name" value="latezero-intent" />
-  <input type="hidden" name="bot-field2" />
-  <input type="hidden" name="email" id="intent-email" />
-  <input type="hidden" name="intent" id="intent-value" />
-  <input type="hidden" name="source" id="intent-source" />
-  <input type="hidden" name="evidence_level" id="intent-level" />
-</form>
+<!-- intent captured via JS fetch -->
 
 <!-- FOOTER -->
 <footer>
@@ -460,15 +443,10 @@
 
     // Submit Step 1 to Netlify Forms
     try {
-      await fetch('/', {
+      await fetch('https://formspree.io/f/xjkvqwrb', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name': 'latezero-step1',
-          email: capturedEmail,
-          source: utmSource,
-          intent: 'email-only'
-        })
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: capturedEmail, source: utmSource, intent: 'email-only', evidence_level: 'Level 4 - Email Lead' })
       });
     } catch (err) {
       // Non-fatal: still show Step 2
@@ -496,16 +474,10 @@
     document.getElementById('intent-level').value  = 'Level ' + level;
 
     try {
-      await fetch('/', {
+      await fetch('https://formspree.io/f/xjkvqwrb', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name':    'latezero-intent',
-          email:          capturedEmail,
-          intent:         intentV,
-          source:         utmSource,
-          evidence_level: 'Level ' + level
-        })
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: capturedEmail, intent: intentV, source: utmSource, evidence_level: 'Level ' + level + (intendsToBuy ? ' - Price-Confirmed Intent' : ' - Email Lead (declined price)') })
       });
     } catch (err) {
       console.warn('Intent submit error:', err);
