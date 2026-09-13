@@ -443,7 +443,7 @@
 
     // Submit Step 1 to Netlify Forms
     try {
-      await fetch('https://formspree.io/f/xjkvqwrb', {
+      await fetch('https://script.google.com/macros/s/AKfycbw_P8UbYvaEFjJA2HhTWC-197bhiOD87UjDMmVJZ00lySSBfXIZ2yC9ILsJ4v0dkCGK/exec', {
         method: 'POST',
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: capturedEmail, source: utmSource, intent: 'email-only', evidence_level: 'Level 4 - Email Lead' })
@@ -474,7 +474,7 @@
     document.getElementById('intent-level').value  = 'Level ' + level;
 
     try {
-      await fetch('https://formspree.io/f/xjkvqwrb', {
+      await fetch('https://script.google.com/macros/s/AKfycbw_P8UbYvaEFjJA2HhTWC-197bhiOD87UjDMmVJZ00lySSBfXIZ2yC9ILsJ4v0dkCGK/exec', {
         method: 'POST',
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: capturedEmail, intent: intentV, source: utmSource, evidence_level: 'Level ' + level + (intendsToBuy ? ' - Price-Confirmed Intent' : ' - Email Lead (declined price)') })
