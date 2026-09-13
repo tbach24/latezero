@@ -39,7 +39,7 @@ Same problem drove me to start building something. Xero's gap here is real — i
 
 I'm validating a narrow tool called LateZero that does exactly one thing: automatically applies your configured late fee rule to overdue Xero invoices daily, without needing Paidnice's full AR suite at $69/month.
 
-It's prelaunch — we're gauging whether enough Xero users care before building the integration. If this is a problem you'd actually pay $29/month to solve: https://tbach24.github.io/latezero/
+It's prelaunch — we're gauging whether enough Xero users care before building the integration. If this is a problem you'd actually pay $29/month to solve: https://latezero.critfix.co/
 
 Happy to answer questions. Disclosure: I'm the founder.
 ---
@@ -57,7 +57,7 @@ LateZero: one job, $29/month early-adopter price. It's prelaunch — we're valid
 
 **The question for this community:** Is this actually worth $29/month to you, or do you have a better workaround I'm missing?
 
-Landing page (clearly labeled prelaunch): https://tbach24.github.io/latezero/
+Landing page (clearly labeled prelaunch): https://latezero.critfix.co/
 
 Disclosure: I'm building this. Genuine feedback welcome — including "kill it."
 
@@ -72,7 +72,7 @@ Search community.xero.com for: "late fee" "late payment fee" "overdue invoice fe
 ---
 This has been my frustration too. I'm currently building a standalone tool called LateZero that does just this — automatically applies your configured late fee rule to overdue invoices in Xero without requiring the full Paidnice setup.
 
-It's prelaunch (the integration isn't built yet — validating demand first). If this is something you'd genuinely pay for: https://tbach24.github.io/latezero/
+It's prelaunch (the integration isn't built yet — validating demand first). If this is something you'd genuinely pay for: https://latezero.critfix.co/
 
 Disclosure: I'm the founder.
 ---
@@ -95,7 +95,7 @@ I'm building LateZero — a narrow Xero add-on that automatically applies your c
 
 It's prelaunch. We're figuring out if enough Xero users want this before building the integration.
 
-If you manage invoices in Xero and late fees are a pain: https://tbach24.github.io/latezero/
+If you manage invoices in Xero and late fees are a pain: https://latezero.critfix.co/
 
 Honest feedback welcome — including "this problem isn't big enough to pay for."
 

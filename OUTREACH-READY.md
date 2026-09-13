@@ -5,9 +5,9 @@
 
 ## STEP 1 — DOMAIN (do first, ~5 min)
 
-Register latezero.com at Cloudflare Registrar (~$9.77/year, free privacy):
+Register latezero.critfix.co at Cloudflare Registrar (~$9.77/year, free privacy):
 1. Go to: https://dash.cloudflare.com → Domain Registration → Register
-2. Search: latezero.com → Register → complete checkout
+2. Search: latezero.critfix.co → Register → complete checkout
 3. In Cloudflare DNS, add these records:
    - Type: A | Name: @ | Value: 185.199.108.153
    - Type: A | Name: @ | Value: 185.199.109.153
@@ -15,10 +15,10 @@ Register latezero.com at Cloudflare Registrar (~$9.77/year, free privacy):
    - Type: A | Name: @ | Value: 185.199.111.153
    - Type: CNAME | Name: www | Value: tbach24.github.io
 4. In GitHub: go to https://github.com/tbach24/latezero/settings/pages
-   → Custom domain → type: latezero.com → Save
-5. Wait ~10 min → site live at https://latezero.com
+   → Custom domain → type: latezero.critfix.co → Save
+5. Wait ~10 min → site live at https://latezero.critfix.co
 
-Once done: all links below use latezero.com (already in CNAME file).
+Once done: all links below use latezero.critfix.co (already in CNAME file).
 
 ---
 
@@ -33,7 +33,7 @@ Same frustration here. Xero flags things as overdue and sends reminders, but app
 
 I'm building a narrow tool called LateZero that does exactly this — automatically applies your configured late fee rule to overdue Xero invoices daily. No full AR suite, just that one job. $29/month early-adopter price.
 
-It's prelaunch right now (validating demand before building the Xero integration). If this is a problem you'd pay to solve: latezero.com
+It's prelaunch right now (validating demand before building the Xero integration). If this is a problem you'd pay to solve: latezero.critfix.co
 
 Disclosure: I'm the founder. Genuine feedback welcome including "kill it."
 ```
@@ -47,7 +47,7 @@ This is exactly the gap I'm trying to fill. Xero won't auto-apply a late fee —
 
 Building LateZero: one job, one price ($29/month early-adopter), automatically applies your late fee rules to overdue Xero invoices daily. Prelaunch — validating demand first.
 
-latezero.com if you'd find this useful. (Founder here, so take that for what it is.)
+latezero.critfix.co if you'd find this useful. (Founder here, so take that for what it is.)
 ```
 
 ---
@@ -59,7 +59,7 @@ Yes — the reminders are fine but they don't actually do anything about the fee
 
 I'm validating a tool called LateZero that auto-applies late fees to overdue Xero invoices on a daily schedule, based on rules you set once. $29/month early-adopter. Prelaunch right now.
 
-latezero.com — disclosure: I'm building this.
+latezero.critfix.co — disclosure: I'm building this.
 ```
 
 ---
@@ -71,7 +71,7 @@ The manual new-invoice approach is exactly what LateZero is meant to replace.
 
 Building a narrow Xero add-on that creates and posts the late fee invoice automatically, on your configured schedule. One job, $29/month early-adopter, prelaunch.
 
-latezero.com — founder here, so grain of salt, but genuine feedback welcome.
+latezero.critfix.co — founder here, so grain of salt, but genuine feedback welcome.
 ```
 
 ---
@@ -91,7 +91,7 @@ I'm building LateZero: a narrow Xero add-on that does exactly one thing — auto
 
 $29/month early-adopter pricing. Prelaunch — validating demand before building the integration.
 
-If you use Xero and this is a real pain: latezero.com
+If you use Xero and this is a real pain: latezero.critfix.co
 
 Honest question: is this worth $29/month to you, or do you have a better workaround?
 

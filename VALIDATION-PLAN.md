@@ -98,7 +98,7 @@ Both fire via `fetch()` client-side after page deploy.
 1. Go to github.com/new — create repo named `latezero`
 2. I'll push the files via SSH (already authenticated)
 3. Enable GitHub Pages in repo settings → Pages → Deploy from branch `main`
-4. URL: `tbach24.github.io/latezero`
+4. URL: `latezero.critfix.co`
 
 Either option is free, HTTPS, live in under 5 minutes.
 
